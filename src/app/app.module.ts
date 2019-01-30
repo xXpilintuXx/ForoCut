@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeadherComponent } from './component/headher/headher.component';
 import { TextcardComponent } from './component/shared/textcard/textcard.component';
+import { CarrercardComponent } from './component/shared/carrercard/carrercard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadherComponent,
-    TextcardComponent
+    TextcardComponent,
+    CarrercardComponent
   ],
   imports: [
     BrowserModule

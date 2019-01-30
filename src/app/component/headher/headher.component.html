@@ -1,18 +1,18 @@
-<ul id="dropdown1" class="dropdown-content cyan darken-2">
+<ul id="dd0" class="dropdown-content cyan darken-2">
   <li><a href="#!" class="white-text">ICCO</a></li>
   <li class="divider"></li>
   <li><a href="#!" class="white-text">NANO</a></li>
   <li class="divider"></li>
   <li><a href="#!" class="white-text">ENERGIA</a></li>
 </ul>
-<ul id="dropdown2" class="dropdown-content cyan darken-2">
+<ul id="dropdown1" class="dropdown-content cyan darken-2">
   <li><a href="#!" class="white-text">SALUD PUBLICA</a></li>
   <li class="divider"></li>
   <li><a href="#!" class="white-text">CIRUJANOS</a></li>
   <li class="divider"></li>
   <li><a href="#!" class="white-text">NUTRICION</a></li>
 </ul>
-<ul id="dropdown3" class="dropdown-content cyan darken-2">
+<ul id="dropdown2" class="dropdown-content cyan darken-2">
   <li><a href="#!" class="white-text">CONTABILIDAD</a></li>
   <li class="divider"></li>
   <li><a href="#!" class="white-text">DERECHO</a></li>
@@ -25,7 +25,7 @@
     <ul class="right hide-on-med-and-down">
       <li><a href="sass.html">General</a></li>
       <!-- Dropdown Trigger -->
-      <li *ngFor="let departamento of dep; let i = index;"><a class="dropdown-trigger" href="#!" data-target="dropdown1">{{ departamento }}<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li *ngFor="let departamento of dep; let i = index;"><a href="#!" >{{ departamento }}</a></li>
     </ul>
   </div>
 </nav>
