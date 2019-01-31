@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as Data from '../../../bd/post.json';
+
 
 @Component({
   selector: 'app-textcard',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./textcard.component.css']
 })
 export class TextcardComponent implements OnInit {
-
-  constructor() { }
+  post: any;
+  constructor() {
+    this.post = Data;
+    console.log(this.post);
+  }
 
   ngOnInit() {
   }
-
 }
