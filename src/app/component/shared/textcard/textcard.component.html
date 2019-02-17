@@ -1,18 +1,17 @@
-<div class="row">
-  <div class="col s12 m9">
-    <div class="card horizontal medium grey lighten-5 large z-depth-2 hoverable">
+
+    <div class="card horizontal medium large z-depth-2 hoverable">
 
 
       <!-- vote panel horizontal and transparent-->
-      <div class="card-panel transparent z-depth-0" style="padding-left: 15px; padding-right: 0px; padding-top: 0px;">
+      <div class="card-panel z-depth-0" style="padding-left: 15px; padding-right: 0px; padding-top: 0px;">
         <div class="row">
-          <a class="waves-effect waves-teal btn-flat"><i class="material-icons">exposure_plus_1</i></a>
+          <a class="waves-effect waves-redv btn-flat"><i class="material-icons white-text">keyboard_arrow_up</i></a>
+        </div>
+        <div class="row counting">
+          <a class="white-text btn-flat">{{ post.default.votes }}</a>
         </div>
         <div class="row">
-          <a class="btn-flat">{{ post.default.votes }}</a>
-        </div>
-        <div class="row">
-          <a class="waves-effect waves-teal btn-flat"><i class="material-icons">exposure_neg_1</i></a>
+          <a class="waves-effect waves-redv btn-flat"><i class="material-icons white-text">keyboard_arrow_down</i></a>
         </div>
       </div>
 
@@ -44,15 +43,14 @@
           <div class="card-action">
 
             <!-- buttons on wide screen-->
-            <a class="waves-effect waves-yellow btn-flat tooltipped small hide-on-small-only cyan-text text-darken-2" data-tooltip="Comentarios" data-position="top" ><i class="material-icons left">chat</i>{{ post.default.comments }}</a>
-            <a class="waves-effect waves-yellow btn-flat tooltipped small hide-on-small-only cyan-text text-darken-2" data-tooltip="Guardar" data-position="top"><i class="material-icons left">add_circle</i></a>
-            <a class="waves-effect waves-yellow dropdown-trigger btn-flat tooltipped small hide-on-small-only cyan-text text-darken-2" data-tooltip="Compartir" data-position="top" data-target="dropdownshare"><i class="material-icons left">share</i></a>
-
+            <a class="waves-effect waves-redv btn-flat tooltipped small hide-on-small-only white-text text-darken-2" data-tooltip="Comentarios" data-position="top" ><i class="material-icons left">chat</i>{{ post.default.comments }}</a>
+            <a class="waves-effect waves-redv btn-flat tooltipped small hide-on-small-only white-text text-darken-2" data-tooltip="Guardar" data-position="top"><i class="material-icons left">add_circle</i></a>
+            <a class="waves-effect waves-redv dropdown-trigger btn-flat tooltipped small hide-on-small-only white-text text-darken-2" data-tooltip="Compartir" data-position="top" data-target="dropdownshare"><i class="material-icons left">share</i></a>
 
             <!-- buttons on small screen-->
-            <a class="waves-effect waves-yellow btn-flat  small hide-on-med-and-up" ><i class="material-icons left">chat</i>{{ post.default.comments }} comentarios</a>
-            <a class="waves-effect waves-yellow btn-flat small hide-on-med-and-up" ><i class="material-icons left">add_circle</i>guardar</a>
-            <a class="waves-effect waves-yellow dropdown-trigger btn-flat small hide-on-med-and-up" data-target="dropdownshare"><i class="material-icons left">share</i>compartir</a>
+            <a class="waves-effect waves-redv btn-flat  small hide-on-med-and-up" ><i class="material-icons left">chat</i>{{ post.default.comments }} comentarios</a>
+            <a class="waves-effect waves-redv btn-flat small hide-on-med-and-up" ><i class="material-icons left">add_circle</i>guardar</a>
+            <a class="waves-effect waves-redv dropdown-trigger btn-flat small hide-on-med-and-up" data-target="dropdownshare"><i class="material-icons left">share</i>compartir</a>
 
             <ul id="dropdownshare" class="dropdown-content">
               <li><a href="" class="teal-text text-darken-2">Facebook</a></li>
@@ -62,5 +60,3 @@
           </div>
         </div>
     </div>
-  </div>
-</div>

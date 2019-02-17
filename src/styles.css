@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: black;
+}
+
+.waves-effect.waves-redv .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+    background-color: rgb(226, 6, 6);
+}

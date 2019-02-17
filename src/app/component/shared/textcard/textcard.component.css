@@ -1,0 +1,13 @@
+.card, .card-panel {
+    background-color: #303030;
+    color: white; 
+}
+
+.card {
+    border-radius: .6em;
+}
+
+.card-panel div {
+    font-size: 2em;
+    margin-bottom: 0;
+}
