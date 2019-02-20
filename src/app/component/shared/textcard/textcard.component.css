@@ -8,6 +8,13 @@
 }
 
 .card-panel div {
-    font-size: 2em;
+    font-size: 1em;
     margin-bottom: 0;
 }
+
+.vote-buttons {
+    text-align: center;
+    width: 10%;
+}
+.vote-buttons > div {
+} 

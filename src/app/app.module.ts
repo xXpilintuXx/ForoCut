@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { DomseguroPipe } from './pipe/domseguro.pipe';
 
+
 import { AppComponent } from './app.component';
 import { HeadherComponent } from './component/headher/headher.component';
 import { TextcardComponent } from './component/shared/textcard/textcard.component';
@@ -9,6 +10,9 @@ import { CarrercardComponent } from './component/shared/carrercard/carrercard.co
 import { TiempopublicadoPipe } from './pipe/tiempopublicado.pipe';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { EditorComponent } from './component/shared/editor/editor.component';
+import { LoginComponent } from './component/login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './component/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,14 @@ import { EditorComponent } from './component/shared/editor/editor.component';
     CarrercardComponent,
     DomseguroPipe,
     TiempopublicadoPipe,
-    EditorComponent
+    EditorComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     CKEditorModule,
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
