@@ -13,6 +13,7 @@ import { EditorComponent } from './component/shared/editor/editor.component';
 import { LoginComponent } from './component/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './component/home/home.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './component/home/home.component';
     TiempopublicadoPipe,
     EditorComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent
   ],
   imports: [
     CKEditorModule,

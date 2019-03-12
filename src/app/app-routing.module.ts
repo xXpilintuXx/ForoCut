@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './component/login/login.component';
 import { HomeComponent } from './component/home/home.component';
+import { RegisterComponent } from './register/register.component';
 
 const app_routes : Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent  },
+  { path: 'register', component: RegisterComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

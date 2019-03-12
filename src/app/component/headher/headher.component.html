@@ -1,13 +1,12 @@
-
 <nav>
-  <div class="nav-wrapper">
-  <a href="#!" class="brand-logo left"><img class="responsive-img" src="assets/img/CUT_SinFondo.png" width="70px" height="70px"></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a routerLink="home">General</a></li>
-      <!-- Dropdown Trigger -->
-      <li *ngFor="let departamento of dep; let i = index;"><a href="#!" >{{ departamento }}</a></li>
-      <li><a routerLink="login">Iniciar sesion</a></li>
-    </ul>
-  </div>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo left"><img class="responsive-img" src="assets/img/CUT_SinFondo.png" width="70px" height="70px"></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a routerLink="home">General</a></li>
+            <!-- Dropdown Trigger -->
+            <li *ngFor="let departamento of dep; let i = index;"><a href="#!">{{ departamento }}</a></li>
+            <li><a routerLink="login">Iniciar sesion</a></li>
+            <li><a routerLink="register">Registrarse</a></li>
+        </ul>
+    </div>
 </nav>
-
