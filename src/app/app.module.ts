@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { DomseguroPipe } from './pipe/domseguro.pipe';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeadherComponent } from './component/headher/headher.component';
@@ -13,7 +13,7 @@ import { EditorComponent } from './component/shared/editor/editor.component';
 import { LoginComponent } from './component/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './component/home/home.component';
-import { RegisterComponent } from './register/register.component';
+import { RegisterComponent } from './component/register/register.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,8 @@ import { RegisterComponent } from './register/register.component';
   imports: [
     CKEditorModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
