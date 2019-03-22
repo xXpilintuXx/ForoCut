@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class TiempopublicadoPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
+  transform(value: number): any {
+    
     return null;
   }
 

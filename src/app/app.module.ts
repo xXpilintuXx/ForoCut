@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { DomseguroPipe } from './pipe/domseguro.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { TimeAgoPipe } from 'time-ago-pipe';
 
 import { AppComponent } from './app.component';
 import { HeadherComponent } from './component/headher/headher.component';
@@ -26,7 +27,8 @@ import { RegisterComponent } from './component/register/register.component';
     EditorComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    TimeAgoPipe
   ],
   imports: [
     CKEditorModule,

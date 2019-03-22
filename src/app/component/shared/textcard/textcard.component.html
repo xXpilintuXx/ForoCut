@@ -1,9 +1,9 @@
 
-    <div class="card horizontal medium large z-depth-2 hoverable">
+    <div class="card horizontal medium large z-depth-2 hoverable animated slideInUp faster">
 
 
       <!-- vote panel horizontal and transparent-->
-      <div class="card-panel vote-buttons z-depth-0" style="padding-left: 15px; padding-right: 0px; padding-top: 0px;">
+      <div class="card-panel vote-buttons z-depth-0 hide-on-small-only" style="padding-left: 15px; padding-right: 0px; padding-top: 0px;">
         <div class="row">
           <a class="waves-effect waves-redv btn-flat"><i class="tiny material-icons white-text ">keyboard_arrow_up</i></a>
         </div>
@@ -21,12 +21,12 @@
 
           <!-- info tab on wide screen-->
           <div style="padding: 10px" class="hide-on-small-only">
-            {{ post.default.category }} Publicacion por {{ post.default.owner_name }} - Hace 10 horas
+            {{ post.default.category }} Publicacion por {{ post.default.owner_name }} - {{ your_date | timeAgo }}
           </div>
 
           <!-- info on small screen -->
           <div style="padding: 10px" class="hide-on-med-and-up">
-            {{ post.default.category }} - Hace 10 horas
+            {{ post.default.category }} - {{ your_date | timeAgo }}
           </div>
 
           <span class="card-title"> {{ post.default.title }} </span><span class=""></span>
@@ -48,9 +48,9 @@
             <a class="waves-effect waves-redv dropdown-trigger btn-flat tooltipped small hide-on-small-only white-text text-darken-2" data-tooltip="Compartir" data-position="top" data-target="dropdownshare"><i class="material-icons left">share</i></a>
 
             <!-- buttons on small screen-->
-            <a class="waves-effect waves-redv btn-flat  small hide-on-med-and-up" ><i class="material-icons left">chat</i>{{ post.default.comments }} comentarios</a>
-            <a class="waves-effect waves-redv btn-flat small hide-on-med-and-up" ><i class="material-icons left">add_circle</i>guardar</a>
-            <a class="waves-effect waves-redv dropdown-trigger btn-flat small hide-on-med-and-up" data-target="dropdownshare"><i class="material-icons left">share</i>compartir</a>
+            <a class="waves-effect waves-redv btn-flat  small hide-on-med-and-up" ><i class="material-icons left">chat</i>{{ post.default.comments }}</a>
+            <a class="waves-effect waves-redv btn-flat small hide-on-med-and-up" ><i class="material-icons left">add_circle</i></a>
+            <a class="waves-effect waves-redv dropdown-trigger btn-flat small hide-on-med-and-up" data-target="dropdownshare"><i class="material-icons left">share</i></a>
 
             <ul id="dropdownshare" class="dropdown-content">
               <li><a href="" class="teal-text text-darken-2">Facebook</a></li>
