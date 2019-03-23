@@ -15,6 +15,7 @@ import { LoginComponent } from './component/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './component/home/home.component';
 import { RegisterComponent } from './component/register/register.component';
+import { CreatePostComponent } from './component/create-post/create-post.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RegisterComponent } from './component/register/register.component';
     LoginComponent,
     HomeComponent,
     RegisterComponent,
-    TimeAgoPipe
+    TimeAgoPipe,
+    CreatePostComponent
   ],
   imports: [
     CKEditorModule,

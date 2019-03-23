@@ -22,14 +22,19 @@ export class RegisterComponent implements OnInit {
       })
       .subscribe( this.upUser );
   }  
-  generarUsuario(nombre_, email_, password_){
-        this.user.username = nombre_;
-        this.user.email = email_;
-        this.user.password = password_;
+  generarUsuario(event: any){
+        this.user.username = event.target.name.value;
+        if( event.target.email.value === event.target.email_.value){
+          this.user.email = event.target.email.value;
+        }
+        if( event.target.pass.value === event.target.pass_.value ){
+          this.user.password = event.target.pass.value;
+        }
+        this.callServer();
   }
   
   upUser(data){
-    
+    console.log(data);
   }
   constructor(private http: HttpClient) {
     }

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import { template } from '@angular/core/src/render3';
+
+
 
 @Component({
   selector: 'app-editor',
@@ -8,7 +11,9 @@ import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 })
 export class EditorComponent implements OnInit {
   public Editor = ClassicEditor;
-  constructor() { }
+  public Config = { toolbar: [ 'bold', 'italic', 'Blockquote', '|', 'link',  '|', 'undo', 'redo' ] };
+  constructor() {
+   }
 
   ngOnInit() {
   }

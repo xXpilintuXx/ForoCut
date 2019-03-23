@@ -1,62 +1,76 @@
+<div class="card horizontal medium large z-depth-2 hoverable animated slideInUp faster">
 
-    <div class="card horizontal medium large z-depth-2 hoverable animated slideInUp faster">
 
-
-      <!-- vote panel horizontal and transparent-->
-      <div class="card-panel vote-buttons z-depth-0 hide-on-small-only" style="padding-left: 15px; padding-right: 0px; padding-top: 0px;">
+    <!-- vote panel horizontal and transparent-->
+    <div class="card-panel vote-buttons z-depth-0 hide-on-small-only" style="padding-left: 15px; padding-right: 0px; padding-top: 0px;">
         <div class="row">
-          <a class="waves-effect waves-redv btn-flat"><i class="tiny material-icons white-text ">keyboard_arrow_up</i></a>
+            <a class="waves-effect waves-redv btn-flat"><i class="tiny material-icons white-text ">keyboard_arrow_up</i></a>
         </div>
         <div class="row counting">
-          <a class="white-text btn-flat">{{ post.default.votes }}</a>
+            <a class="white-text btn-flat">{{ post.default.votes }}</a>
         </div>
         <div class="row">
-          <a class="waves-effect waves-redv btn-flat"><i class="material-icons white-text">keyboard_arrow_down</i></a>
+            <a class="waves-effect waves-redv btn-flat"><i class="material-icons white-text">keyboard_arrow_down</i></a>
         </div>
-      </div>
+    </div>
 
 
-      <!-- card content without margin on the card-->
-      <div class="card-content" style="padding-top: 0px">
+    <!-- card content without margin on the card-->
+    <div class="card-content" style="padding-top: 0px">
 
-          <!-- info tab on wide screen-->
-          <div style="padding: 10px" class="hide-on-small-only">
+        <!-- info tab on wide screen-->
+        <div style="padding: 10px" class="hide-on-small-only">
             {{ post.default.category }} Publicacion por {{ post.default.owner_name }} - {{ your_date | timeAgo }}
-          </div>
+        </div>
 
-          <!-- info on small screen -->
-          <div style="padding: 10px" class="hide-on-med-and-up">
+        <!-- info on small screen -->
+        <div style="padding: 10px" class="hide-on-med-and-up">
             {{ post.default.category }} - {{ your_date | timeAgo }}
-          </div>
+        </div>
 
-          <span class="card-title"> {{ post.default.title }} </span><span class=""></span>
+        <span class="card-title"> {{ post.default.title }} </span><span class=""></span>
 
-          <!-- text on wide screen -->
-          <p class="flow-text hide-on-small-only" style="padding-left: 5px;">
+
+        <!-- image panel card-->
+        <p *ngIf="post.default.Img != 0">
+            <img class="responsive-img" src="http://los40cl00.epimg.net/los40/imagenes/2019/01/21/actualidad/1548096236_989757_1548096276_noticia_normal.jpg">
+        </p>
+
+
+
+
+
+
+
+
+
+
+        <!-- text on wide screen -->
+        <p *ngIf="post.default.Img == 0" class="flow-text hide-on-small-only" style="padding-left: 5px;">
             {{ post.default.text }}
-          </p>
+        </p>
 
-          <!-- text on small screen-->
-          <p class="truncate hide-on-med-and-up" style="padding-left: 5px;">
+        <!-- text on small screen-->
+        <p *ngIf="post.default.Img == 0" class="truncate hide-on-med-and-up" style="padding-left: 5px;">
             {{ post.default.text }}
-          </p>
-          <div class="card-action">
+        </p>
+        <div class="card-action">
 
             <!-- buttons on wide screen-->
-            <a class="waves-effect waves-redv btn-flat tooltipped small hide-on-small-only white-text text-darken-2" data-tooltip="Comentarios" data-position="top" ><i class="material-icons left">chat</i>{{ post.default.comments }}</a>
+            <a class="waves-effect waves-redv btn-flat tooltipped small hide-on-small-only white-text text-darken-2" data-tooltip="Comentarios" data-position="top"><i class="material-icons left">chat</i>{{ post.default.comments }}</a>
             <a class="waves-effect waves-redv btn-flat tooltipped small hide-on-small-only white-text text-darken-2" data-tooltip="Guardar" data-position="top"><i class="material-icons left">add_circle</i></a>
             <a class="waves-effect waves-redv dropdown-trigger btn-flat tooltipped small hide-on-small-only white-text text-darken-2" data-tooltip="Compartir" data-position="top" data-target="dropdownshare"><i class="material-icons left">share</i></a>
 
             <!-- buttons on small screen-->
-            <a class="waves-effect waves-redv btn-flat  small hide-on-med-and-up" ><i class="material-icons left">chat</i>{{ post.default.comments }}</a>
-            <a class="waves-effect waves-redv btn-flat small hide-on-med-and-up" ><i class="material-icons left">add_circle</i></a>
+            <a class="waves-effect waves-redv btn-flat  small hide-on-med-and-up"><i class="material-icons left">chat</i>{{ post.default.comments }}</a>
+            <a class="waves-effect waves-redv btn-flat small hide-on-med-and-up"><i class="material-icons left">add_circle</i></a>
             <a class="waves-effect waves-redv dropdown-trigger btn-flat small hide-on-med-and-up" data-target="dropdownshare"><i class="material-icons left">share</i></a>
 
             <ul id="dropdownshare" class="dropdown-content">
-              <li><a href="" class="teal-text text-darken-2">Facebook</a></li>
-              <li><a href="" class="teal-text text-darken-2">Copiar Link</a></li>
-              <li><a href="" class="teal-text text-darken-2">Twitter</a></li>
+                <li><a href="http://www.facebook.com" class="teal-text text-darken-2">Facebook</a></li>
+                <li><a href="" class="teal-text text-darken-2">Copiar Link</a></li>
+                <li><a href="http://www.twitter.com" class="teal-text text-darken-2">Twitter</a></li>
             </ul>
-          </div>
         </div>
     </div>
+</div>
